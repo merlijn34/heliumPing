@@ -26,7 +26,7 @@ ToDo:
 				"language_code": "en"
 				},
 				"chat": {
-					"id": 166xxxxx,
+					"id": 166xxxxx, <!-- The ID we need   -->
 					"first_name": "Merlijn",
 					"type": "private"
 				},
