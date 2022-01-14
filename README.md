@@ -11,37 +11,37 @@ ToDo:
 	- our bot is now ready, be sure to save a backup of your API token, and correct, this API token is your 'BOT_TOKEN'
 	- On Telegram, search your bot (by the username you just created), press the “Start” button or send a “/start” message
 	- Open a new tab with your browser, enter ```https://api.telegram.org/bot<yourtoken>/getUpdates``` , replace ```<yourtoken>```with your API token, press enter and you should see something like this:
-		```json
+	```json
+		{
+		"ok": true,
+		"result": [
 			{
-			"ok": true,
-			"result": [
-				{
-				"update_id": 999999,
-				"message": {
-				"message_id": 365,
-				"from": {
-				"id": 999999,
-				"is_bot": false,
+			"update_id": 999999,
+			"message": {
+			"message_id": 365,
+			"from": {
+			"id": 999999,
+			"is_bot": false,
+			"first_name": "Merlijn",
+			"language_code": "en"
+			},
+			"chat": {
+				"id": 00000, <!-- The ID we need   -->
 				"first_name": "Merlijn",
-				"language_code": "en"
-				},
-				"chat": {
-					"id": 00000, <!-- The ID we need   -->
-					"first_name": "Merlijn",
-					"type": "private"
-				},
-				"date": 1639734628,
-				"text": "/start",
-				"entities": [
-				{
-				"offset": 0,
-				"length": 6,
-				"type": "bot_command"
-				}
-			]
+				"type": "private"
+			},
+			"date": 1639734628,
+			"text": "/start",
+			"entities": [
+			{
+			"offset": 0,
+			"length": 6,
+			"type": "bot_command"
 			}
-		```
-	- Look for the chat id, in the example it's ```166xxxx```. This is your 'BOT_CHAT_ID'
+		]
+		}
+	```
+	- Look for the chat id, in the example it's ```00000```. This is your 'BOT_CHAT_ID'
 	- Save these in the example.env file, after rename the file to '.env'
 
 2. Find the hotspots public ip and add this to the 'host' array on line 12. you can use [helium status io](https://app.heliumstatus.io/) search for your hotspot and look for the Helium API listed address
