@@ -16,17 +16,17 @@ ToDo:
 			"ok": true,
 			"result": [
 				{
-				"update_id": 945xxxxx,
+				"update_id": 999999,
 				"message": {
 				"message_id": 365,
 				"from": {
-				"id": 166xxxxxx,
+				"id": 999999,
 				"is_bot": false,
 				"first_name": "Merlijn",
 				"language_code": "en"
 				},
 				"chat": {
-					"id": 166xxxxx, <!-- The ID we need   -->
+					"id": 00000, <!-- The ID we need   -->
 					"first_name": "Merlijn",
 					"type": "private"
 				},
